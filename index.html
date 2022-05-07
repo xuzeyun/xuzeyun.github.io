@@ -1,1 +1,24 @@
-Hello World
+<!DOCTYPE html>
+<html lang="cn">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>示例标题</title>
+    <meta name="keywords" content="示例关键字,关键字1,关键字2" />
+    <meta name="description" content="示例详情文案" />
+    <script src="http://res.wx.qq.com/open/js/jweixin-1.6.0.js"></script>
+    <script>
+      var shareJsonData = {
+        title: "示例标题", // 分享标题
+        desc: "示例详情文案", // 分享描述
+        // link: "http://xxx.xxx.xx/", // 分享链接，该链接域名或路径必须与当前页面对应的公众号JS安全域名一致
+        imgUrl: $("#logo").attr("src"), // 分享图标
+      };
+    </script>
+  </head>
+  <body>
+    <img id="logo" src="logo.jpg" width="0" height="0" />
+    <p>我叫许泽云这是我的个人主页</p>
+  </body>
+</html>
